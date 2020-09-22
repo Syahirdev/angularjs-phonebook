@@ -10,10 +10,17 @@ import { DirectoryComponent } from './directory/directory.component';
 import { Routing } from './app.routes';
 import { FilterPipe } from './filter.pipe';
 import { LoggingService } from './logging.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, DirectoryComponent, FilterPipe],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, Routing],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    Routing,
+    HttpClientModule,
+  ],
   providers: [LoggingService],
   bootstrap: [AppComponent],
 })
