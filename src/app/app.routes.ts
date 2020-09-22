@@ -11,5 +11,9 @@ const routes: Routes = [
     path: 'directory',
     component: DirectoryComponent,
   },
+  {
+    path: 'directory/:person',
+    component: DirectoryComponent,
+  },
 ];
 export const Routing = RouterModule.forRoot(routes);
