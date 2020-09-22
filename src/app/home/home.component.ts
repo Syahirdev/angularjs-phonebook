@@ -7,24 +7,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to Phonebook Homepage!';
-  myString = 'I like angularjs x_x';
-  myBoolean = true;
-
-  alertFunction(val) {
-    alert('Hi there! ' + val);
-  }
-
-  personObj = {
-    name: 'Syahir',
-    phoneNo: '0123456789',
-  };
-
-  @Input() person;
-  @Output() onYell = new EventEmitter();
-
-  fireYellEvent(e) {
-    this.onYell.emit(e);
-  }
 
   constructor() {}
 

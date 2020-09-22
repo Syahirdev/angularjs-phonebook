@@ -7,11 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./directory.component.css'],
 })
 export class DirectoryComponent implements OnInit {
-  person: string;
-
-  constructor(private route: ActivatedRoute) {
-    this.person = route.snapshot.params['person'];
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

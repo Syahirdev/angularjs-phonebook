@@ -9,13 +9,4 @@ import { HomeComponent } from './home/home.component';
 })
 export class AppComponent {
   title = 'angularjs-phonebook';
-  person = {
-    name: 'Suyab bin Jalil',
-    phoneNo: '012',
-  };
-
-  yell(e) {
-    alert('This is yelling function');
-    console.log(e);
-  }
 }
