@@ -1,1 +1,26 @@
-<p>directory works!</p>
+<p [ngClass]="classes">directory works!</p>
+
+<p *ngIf="test">Only show if test is true</p>
+
+<hr />
+<p>Ninja List</p>
+<ul id="person-listing">
+  <li *ngFor="let person of persons">
+    <div class="single-person">
+      <span>{{ person.phoneNo }}</span>
+      <h3>{{ person.name }}</h3>
+    </div>
+  </li>
+</ul>
+
+<style>
+  .blue {
+    color: blue;
+  }
+  .red {
+    color: red;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+</style>
