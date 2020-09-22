@@ -1,12 +1,4 @@
-<p>Person List</p>
-<ul id="person-listing">
-  <li *ngFor="let person of persons">
-    <div class="single-person">
-      <span>{{ person.phoneNo }}</span>
-      <h3>{{ person.name }}</h3>
-    </div>
-  </li>
-</ul>
+<p>{{ directoryTitle }}</p>
 
 <form id="add-person">
   <input
@@ -14,12 +6,15 @@
     placeholder="Name"
     [(ngModel)]="name"
     [ngModelOptions]="{ standalone: true }"
+    ng-required="myVar"
   />
+  <br />
   <input
     type="text"
     placeholder="Phone Number"
     [(ngModel)]="phoneNo"
     [ngModelOptions]="{ standalone: true }"
+    ng-required="myVar"
   />
   <button (click)="fbPostData(name, phoneNo)">Add Contacts</button>
 </form>

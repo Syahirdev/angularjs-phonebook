@@ -11,6 +11,10 @@ declare var firebase: any;
   providers: [DataService],
 })
 export class DirectoryComponent implements OnInit {
+  directoryTitle = 'Add New Contacts';
+  myVar = true;
+  name = null;
+  phoneNo = null;
   persons = [];
   constructor(
     private logger: LoggingService,
@@ -39,9 +43,16 @@ export class DirectoryComponent implements OnInit {
   }
 
   fbPostData(name, phoneNo) {
-    firebase.database().ref('/').push({
-      name: name,
-      phoneNo: phoneNo,
-    });
+    if (this.name === null || this.phoneNo === null) {
+      alert('Name and Phone Number are required!');
+    } else {
+      firebase.database().ref('/').push({
+        name: name,
+        phoneNo: phoneNo,
+      });
+      alert('New Contacts Has Been Added!');
+      this.name = null;
+      this.phoneNo = null;
+    }
   }
 }

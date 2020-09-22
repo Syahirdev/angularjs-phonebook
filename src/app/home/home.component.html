@@ -1,3 +1,13 @@
 <p>{{ homeTitle }}</p>
-
-<button (click)="logIt()">Log Button</button>
+<ul id="person-listing">
+  <li *ngFor="let person of persons">
+    <div class="single-person">
+      <h3>{{ person.name }}</h3>
+      <br />
+      <span
+        ><i class="material-icons phone-icon">perm_phone_msg</i>
+        {{ person.phoneNo }}</span
+      >
+    </div>
+  </li>
+</ul>

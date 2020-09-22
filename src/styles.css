@@ -1,10 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~material-design-icons/iconfont/material-icons.css";
 body {
   font-family: verdana;
   letter-spacing: 0.1em;
   color: #606060;
   background: #eee;
   padding: 20px;
+}
+
+header h2 {
+  color: #0288d1;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 h1,
@@ -100,16 +110,14 @@ nav a:hover {
 }
 
 .single-person span {
-  display: inline-block;
-  border-radius: 2px;
+  margin-left: 13px;
   font-size: 14px;
   text-transform: uppercase;
   padding: 8px !important;
 }
 
 .single-person h3 {
-  padding: 4px;
-  font-size: 20px;
+  font-size: 24px;
   margin-left: 20px;
   display: inline-block;
 }
@@ -122,28 +130,58 @@ nav a:hover {
 }
 
 #add-person {
-  margin-top: 30px;
-  background: #e7e7e7;
-  padding: 10px;
+  margin-right: 40px;
+  margin-bottom: 50px;
   border-radius: 2px;
 }
 
 #add-person input {
-  display: inline-block;
+  /* display: block; */
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 1px solid #ddd;
-  width: 240px;
+  width: 100%;
+  margin: 10px;
 }
 
 #add-person button {
   background: #0288d1;
   color: #eee;
-  padding: 8px 10px;
+  padding: 10px;
   border: 0;
-  borader-radius: 2px;
-  font-size: 16px;
+  border-radius: 3px;
+  font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-  float: right;
+  float: left;
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 12px;
 }
+
+#add-person button:hover {
+  background-color: #1298e1;
+}
+
+#person-listing {
+  margin: 0;
+  padding: 0;
+}
+#person-listing li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.phone-icon {
+  font-size: 24px;
+}
+
+/* input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
