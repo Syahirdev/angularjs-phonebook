@@ -8,9 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 
 import { Routing } from './app.routes';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, DirectoryComponent],
+  declarations: [AppComponent, HomeComponent, DirectoryComponent, FilterPipe],
   imports: [BrowserModule, AppRoutingModule, FormsModule, Routing],
   providers: [],
   bootstrap: [AppComponent],
