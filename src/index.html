@@ -1,13 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AngularjsPhonebook</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularjsPhonebook</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD3xRjGOi5SZiHxxe6eeD10Oc3K0Kbk5sw",
+        authDomain: "phonebook-7f03f.firebaseapp.com",
+        databaseURL: "https://phonebook-7f03f.firebaseio.com",
+        projectId: "phonebook-7f03f",
+        storageBucket: "phonebook-7f03f.appspot.com",
+        messagingSenderId: "140082232214",
+        appId: "1:140082232214:web:3002cbd256e93916cf7bb7",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
 </html>

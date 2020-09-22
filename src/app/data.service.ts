@@ -8,6 +8,6 @@ export class DataService {
   constructor(private http: HttpClient) {}
 
   fetchData() {
-    return this.http.get('assets/data.json');
+    return this.http.get('https://phonebook-7f03f.firebaseio.com/.json');
   }
 }
