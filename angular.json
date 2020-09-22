@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularjs-phonebook"
+    }
+  },
+  "defaultProject": "angularjs-phonebook",
+  "cli": {
+    "analytics": "16d055ee-6601-4696-984b-a8a3ef566756"
+  }
 }
