@@ -14,6 +14,11 @@ export class HomeComponent implements OnInit {
     alert('Hi there! ' + val);
   }
 
+  person = {
+    name: 'Syahir',
+    phoneNo: '0123456789',
+  };
+
   constructor() {}
 
   ngOnInit(): void {}

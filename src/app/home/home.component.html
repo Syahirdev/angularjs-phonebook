@@ -1,14 +1,20 @@
 <p>{{ homeTitle }}</p>
 <ng-content></ng-content>
+<hr />
 
-<!-- property binding -->
-<!-- 
-<input value="{{ myString }}" />
-<input required="{{ myBoolean }}" /> 
--->
-
+<p>property binding</p>
 <input [value]="myString" />
 <input [required]="myBoolean" />
+<hr />
+
+<p>events binding</p>
 <button (click)="alertFunction('passing data to this function')">
   Click Me!
 </button>
+<hr />
+
+<p>two-way data binding</p>
+<input [(ngModel)]="person.name" />
+<input [(ngModel)]="person.phoneNo" />
+<p>{{ person.name }}</p>
+<p>{{ person.phoneNo }}</p>
