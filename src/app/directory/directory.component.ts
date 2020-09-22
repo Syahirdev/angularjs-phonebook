@@ -37,4 +37,11 @@ export class DirectoryComponent implements OnInit {
         this.persons.push(snapshot.val());
       });
   }
+
+  fbPostData(name, phoneNo) {
+    firebase.database().ref('/').push({
+      name: name,
+      phoneNo: phoneNo,
+    });
+  }
 }

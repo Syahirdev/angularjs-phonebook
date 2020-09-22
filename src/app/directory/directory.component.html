@@ -8,4 +8,18 @@
   </li>
 </ul>
 
-<button (click)="logIt()">Log Button</button>
+<form id="add-person">
+  <input
+    type="text"
+    placeholder="Name"
+    [(ngModel)]="name"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <input
+    type="text"
+    placeholder="Phone Number"
+    [(ngModel)]="phoneNo"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <button (click)="fbPostData(name, phoneNo)">Add Contacts</button>
+</form>
