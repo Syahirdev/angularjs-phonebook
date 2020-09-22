@@ -9,6 +9,11 @@ export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to Phonebook Homepage!';
   myString = 'I like angularjs x_x';
   myBoolean = true;
+
+  alertFunction(val) {
+    alert('Hi there! ' + val);
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
