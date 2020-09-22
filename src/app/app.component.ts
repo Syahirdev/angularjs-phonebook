@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularjs-phonebook';
+  person = {
+    name: 'Suyab bin Jalil',
+    phoneNo: '012',
+  };
 }

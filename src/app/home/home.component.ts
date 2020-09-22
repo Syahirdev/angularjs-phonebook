@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -14,10 +14,12 @@ export class HomeComponent implements OnInit {
     alert('Hi there! ' + val);
   }
 
-  person = {
+  personObj = {
     name: 'Syahir',
     phoneNo: '0123456789',
   };
+
+  @Input() person;
 
   constructor() {}
 
