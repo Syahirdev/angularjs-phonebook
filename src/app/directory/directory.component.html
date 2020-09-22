@@ -1,9 +1,4 @@
-<p [ngClass]="classes">directory works!</p>
-
-<p *ngIf="test">Only show if test is true</p>
-
-<hr />
-<p>Ninja List</p>
+<p>Person List</p>
 <ul id="person-listing">
   <li *ngFor="let person of persons">
     <div class="single-person">
@@ -13,14 +8,4 @@
   </li>
 </ul>
 
-<style>
-  .blue {
-    color: blue;
-  }
-  .red {
-    color: red;
-  }
-  .underline {
-    text-decoration: underline;
-  }
-</style>
+<button (click)="logIt()">Log Button</button>

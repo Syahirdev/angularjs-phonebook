@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FilterPipe } from '../filter.pipe';
+import { LoggingService } from '../logging.service';
 
 @Component({
   selector: 'app-directory',
@@ -24,7 +24,11 @@ export class DirectoryComponent implements OnInit {
       phoneNo: '014',
     },
   ];
-  constructor() {}
+  constructor(private logger: LoggingService) {}
+
+  logIt() {
+    this.logger.log();
+  }
 
   ngOnInit(): void {}
 }

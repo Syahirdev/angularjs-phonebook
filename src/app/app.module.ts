@@ -9,11 +9,12 @@ import { DirectoryComponent } from './directory/directory.component';
 
 import { Routing } from './app.routes';
 import { FilterPipe } from './filter.pipe';
+import { LoggingService } from './logging.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, DirectoryComponent, FilterPipe],
   imports: [BrowserModule, AppRoutingModule, FormsModule, Routing],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
