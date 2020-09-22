@@ -11,4 +11,9 @@ export class AppComponent {
     name: 'Suyab bin Jalil',
     phoneNo: '012',
   };
+
+  yell(e) {
+    alert('This is yelling function');
+    console.log(e);
+  }
 }

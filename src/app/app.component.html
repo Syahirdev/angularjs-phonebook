@@ -8,5 +8,7 @@
   </nav>
 </header>
 <section id="main">
-  <app-home [person]="person">Hello from ng-content</app-home>
+  <app-home [person]="person" (onYell)="yell($event)"
+    >Hello from ng-content</app-home
+  >
 </section>
